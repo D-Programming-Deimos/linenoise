@@ -1,0 +1,21 @@
+{
+	"name": "linenoise",
+	"description": "A small self-contained alternative to readline and libedit.",
+	"homepage": "https://github.com/antirez/linenoise",
+	"copyright": "Copyright © 2014, dawg",
+	"authors": ["Salvatore Sanfilippo"],
+	"license": "BSD 2-clause",
+	"importPaths": ["."],
+	"libs": ["linenoise"],
+	"configurations": [
+		{
+			"name": "lib",
+			"targetType": "sourceLibrary",
+		},
+		{
+			"name": "example",
+			"targetType": "executable",
+			"sourceFiles": ["examples/D/example.d"],
+		},
+        ],
+}
