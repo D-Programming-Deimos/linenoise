@@ -6,7 +6,9 @@
 	"authors": ["Salvatore Sanfilippo"],
 	"license": "BSD 2-clause",
 	"importPaths": ["."],
-	"libs": ["linenoise"],
+	"libs-windows": ["linenoise"],
+  "preBuildCommands-posix": ["cc -c -fPIC -oliblinenoise.a C/linenoise.c"],
+  "lflags-posix": ["./liblinenoise.a"],
 	"configurations": [
 		{
 			"name": "lib",
